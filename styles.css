@@ -274,3 +274,7 @@ html[dir=rtl] .lang{direction:ltr}
 @media (max-width:600px){
   .tools,.pgrid--shop{grid-template-columns:1fr}
 }
+
+/* Motion (fx.js) drives transforms on these; keep CSS from fighting it */
+.fx .btn, .fx .pcard, .fx .card{transition:background .2s,color .2s,box-shadow .25s,border-color .2s}
+.fx .pcard:hover{transform:none}
